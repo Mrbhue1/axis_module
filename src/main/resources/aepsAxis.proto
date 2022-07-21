@@ -1,0 +1,68 @@
+syntax="proto3";
+option java_multiple_files=true;
+option java_package="com.iserveu.grpc_stub";
+
+message AxisRequest{
+  string aadhaar=1;
+  string iin=2;
+  int32 amount=3;
+  int64 txnId=4;
+  string latitude=5;
+  string longitude=6;
+  int64 merchantId=7;
+  string bankName=8;
+  string mobileNo=9;
+  string pidData=10;
+  string ipAddress=11;
+  string imeiMac=12;
+  string deviceNo=13;
+  int64 userId=14;
+  string userName=15;
+  string city=16;
+  string state=17;
+
+  int32 stan=18;
+  string bcRrn=19;
+  string country=20;
+}
+
+
+
+message AxisResponse{
+  int32 statusCode=50;
+  int32 subStatusCode=51;
+  string statusDesc=1;
+  string clientRefId=2;
+  string messageString=3;
+  string responseCode=4;
+  string requestID=5;
+  string amount=6;
+  string adhaarNo=7;
+  string txnTime=8;
+  string txnDate=9;
+  string bankName=10;
+  string rrn=11;
+  string status=12;
+  string customerMobile=13;
+  string availableBalance=14;
+  string dispalyMessage=15;
+  string transactionStatus=16;
+  string transactionDateTime=17;
+  string transactionList=18;
+  string npciTranData=19;
+  string isFormated=20;
+  string systemTraceAudit=21;
+  string localTime=22;
+  string localDate=23;
+  string authIndentyResp=24;
+  string txnCurCode=25;
+  string uidAuthCode=26;
+  string terminalIdenty=27;
+  string cardAccceptorCode=28;
+  string nameLocation=29;
+  string ledgerBalance=30;
+}
+service Aeps{
+  rpc aepsCD(AxisRequest) returns(AxisResponse);
+  rpc aepsCW(AxisRequest) returns(AxisResponse);
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FIGWebResSvc>
+    <SvcHeader>
+        <respCode>ER0000</respCode>
+        <respDesc>APPROVED</respDesc>
+        <tspVdrId>010</tspVdrId>
+        <txnId>213010000101</txnId>
+    </SvcHeader>
+    <TxnInfo>
+        <caId>AXB010071953967</caId>
+        <caLocn>
+        </caLocn>
+        <expDate>
+        </expDate>
+        <narration>100|TRANS|ONE FI|1100</narration>
+        <posCaptCode>
+        </posCaptCode>
+        <posCode>05</posCode>
+        <posEntryMode>019</posEntryMode>
+        <procCode>PC0026</procCode>
+        <serviceChrg>
+        </serviceChrg>
+        <setlDate>
+        </setlDate>
+        <agentId>CSC22112191</agentId>
+        <funcCode>1200</funcCode>
+        <pan>6071532999999999999</pan>
+        <rrn>213010000101</rrn>
+        <gatewayRRN>213010005134</gatewayRRN>
+        <terminalData>
+        </terminalData>
+        <terminalId>71953967</terminalId>
+        <txnDateTime>20220601180157</txnDateTime>
+        <txnHmac>9e21d33693cc66b8659502c514b3f564a425bc543d3e0695566f5b7ef0aa3482</txnHmac>
+        <txnMode>AEPS</txnMode>
+        <uniqueNo>000101</uniqueNo>
+    </TxnInfo>
+    <ServiceInfo>
+        <TxnResInfo>
+            <journalNo>0</journalNo>
+            <authCode>XXXXXXXXXXXXXXXXXXXXXXX</authCode>
+            <uidToken>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx/</uidToken>
+            <PartyList>
+                <PartyInfo type="PERSON" categ="CUSTOMER">
+                    <partyIdType>VID</partyIdType>
+                    <partyIdValue>9174156643357001</partyIdValue>
+                    <partyOrg>607153</partyOrg>
+                </PartyInfo>
+            </PartyList>
+            <amount>000000020000</amount>
+            <AddDataList>
+                <AddDataItem value="Virender" name="REMTRNAME"/>
+                <AddDataItem value="917010028516020" name="CUSTACT"/>
+            </AddDataList>
+            <custom>
+                <Details value="00000000100000" name="ACTBAL"/>
+            </custom>
+        </TxnResInfo>
+    </ServiceInfo>
+</FIGWebResSvc>
